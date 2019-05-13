@@ -1,0 +1,40 @@
+$color-primary: #f59637;
+$color-bg-default: #f8f8f8;
+
+.content {
+  position: absolute;
+  top: 60px;
+  padding: 20px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.navbar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  left: 0px;
+  right: 0px;
+  padding: 0 20px;
+  widows: 100%;
+  background-color: $color-primary;
+    @at-root #{&}-content {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      ul {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        li {
+          list-style: none;
+          padding: 0px 10px;
+          &:last-child {
+            padding-right: 0px;
+          }
+        }
+      }
+    }
+}
