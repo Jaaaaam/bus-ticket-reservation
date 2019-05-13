@@ -1,0 +1,58 @@
+@import '../variables.scss';
+
+.trip-finder {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  @at-root #{&}-content {
+    input {
+      line-height: 35px;
+      font-size: 15px;
+      outline: none;
+      border: none;
+    }
+  }
+  @at-root #{&}-form {
+    margin-top: 30px; 
+    width: 650px;
+    
+    .input-wrapper {
+      box-shadow: 0 4px 10px 0 rgba(0,0,0,.15);
+      background-color: #fff;
+      padding: 15px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      i {
+        color: $font-color-1;
+        font-size: 25px;
+        margin-right: 20px;
+      }
+    }
+
+    button {
+      background-color: $color-primary;
+      color: #fff;
+      font-size: 25px;
+      width: 200px;
+      height: 70px;
+      font-weight: bold;
+      outline: none;
+      letter-spacing: 2px;
+      font-family: 'Roboto', sans-serif;
+      text-transform: uppercase;
+    }
+  }
+    @at-root #{&}-header {
+      font-size: 50px;
+      font-weight: bold;
+      display: block;
+    }
+    @at-root #{&}-subheader {
+      font-size: 35px;
+      display: block;
+    }
+}

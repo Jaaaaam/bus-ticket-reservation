@@ -1,0 +1,32 @@
+@import '../variables.scss';
+
+.bookings {
+  margin: 25px 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 90px; 
+  margin-bottom: 100px;
+    @at-root #{&}-section {
+      i {
+        font-size: 50px;
+        color: $color-primary;
+      }
+    }
+    @at-root #{&}-step {
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-top: 20px;
+    }
+}
+
+.bookings-header {
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color:$color-primary;
+  text-decoration-style: dotted;
+}

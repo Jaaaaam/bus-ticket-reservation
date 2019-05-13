@@ -1,121 +1,14 @@
-$color-primary:#FBA723;
-$color-bg-default: #f8f8f8;
-$font-color-1: #2e2e2e;
+@import './variables.scss';
+@import './utils.scss';
 
 html, body {
   font-family: 'Roboto', sans-serif;
   color: $font-color-1;
+  background-color: $color-bg-default;
+  height: 100%;
+  width: 100%;
 }
 .content {
-  position: absolute;
-  background-color: $color-bg-default;
-  top: 63px;
-  // padding: 25px 65px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-}
-
-.trip-finder {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 600px;
-  @at-root #{&}-content {
-    input {
-      line-height: 35px;
-      font-size: 15px;
-      outline: none;
-      border: none;
-    }
-  }
-  @at-root #{&}-form {
-    margin-top: 30px; 
-    width: 650px;
-    
-    .input-wrapper {
-      box-shadow: 0 4px 10px 0 rgba(0,0,0,.15);
-      background-color: #fff;
-      padding: 15px;
-      margin-bottom: 10px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      i {
-        color: $font-color-1;
-        font-size: 25px;
-        margin-right: 20px;
-      }
-    }
-
-    button {
-      background-color: $color-primary;
-      color: #fff;
-      font-size: 25px;
-      width: 200px;
-      height: 70px;
-      font-weight: bold;
-    }
-  }
-    @at-root #{&}-header {
-      font-size: 50px;
-      font-weight: bold;
-      display: block;
-    }
-    @at-root #{&}-subheader {
-      font-size: 35px;
-      display: block;
-    }
-}
-.banner-image {
-  height: 600px;
-}
-
-.navbar {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  height: 60px;
-  left: 0px;
-  right: 0px;
-  padding: 0 65px 0 53px;
-  background-color: #fff;
-  border-bottom: 3px solid $color-primary; 
-    @at-root #{&}-content {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      img {
-        height: 50px;
-      }
-      ul {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        li {
-          list-style: none;
-          padding: 0px 10px;
-          color: $font-color-1 !important;
-          a {
-            font-weight: bold;
-            text-decoration: none;
-            color: $font-color-1 !important;
-          }
-          &:last-child {
-            padding-right: 0px;
-          }
-        }
-      }
-    }
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-}
-
-.full-width {
+  height: 100%;
   width: 100%;
-  display: block;
 }

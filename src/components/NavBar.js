@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import uuidv4 from 'uuid/v4';
 import logo from '../assets/images/logo.png'
+import '../assets/scss/components/navbar.scss'
 
 
 function Navbar({ routes }) {

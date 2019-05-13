@@ -1,6 +1,7 @@
 import React, {Fragment} from 'react';
 import banner from '../assets/images/banner.jpg'
-import TripFinder from '../components/TripFinder'
+import TripFinder from '../components/Home/TripFinder'
+import Booking from '../components/Home/Booking'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
           backgroundPosition: 'center', 
         }}>
         <TripFinder />
+        <Booking />
       </div>
     </Fragment>
   )

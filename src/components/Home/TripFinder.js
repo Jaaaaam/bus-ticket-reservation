@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../assets/scss/components/tripfinder.scss';
 
 function TripFinder() {
   return (

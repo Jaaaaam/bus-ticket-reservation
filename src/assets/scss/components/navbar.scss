@@ -1,0 +1,39 @@
+@import '../variables.scss';
+
+.navbar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  left: 0px;
+  right: 0px;
+  padding: 0 65px 0 53px;
+  background-color: #fff;
+  border-bottom: 3px solid $color-primary; 
+    @at-root #{&}-content {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      img {
+        height: 50px;
+      }
+      ul {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        li {
+          list-style: none;
+          padding: 0px 10px;
+          color: $font-color-1 !important;
+          a {
+            font-weight: bold;
+            text-decoration: none;
+            color: $font-color-1 !important;
+          }
+          &:last-child {
+            padding-right: 0px;
+          }
+        }
+      }
+    }
+}
